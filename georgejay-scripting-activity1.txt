@@ -1,0 +1,10 @@
+#! /bin/sh
+
+echo Your username is `logname`
+echo The current date is `date +"%d/%m/%Y"`
+echo The current time is `date +"%T"`
+echo Your current working directory is `pwd`
+echo "You have `ls -1 | wc -l` files in this directory"
+echo The largest file in the current directory is "`find  -type f -printf '%p\n' | sort -nr | head -1`"
+
+exit 0

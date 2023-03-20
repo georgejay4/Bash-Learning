@@ -1,0 +1,17 @@
+#! /bin/sh
+
+echo "Enter file name: "
+read usersfile
+
+if [ -f $usersfile ]
+then
+	echo "Error: File already exists"
+        exit 1
+
+else
+
+	touch $usersfile
+	echo "File created"
+	exit 0
+
+fi

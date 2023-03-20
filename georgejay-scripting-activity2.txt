@@ -1,0 +1,17 @@
+#! /bin/sh
+
+if [ ! -d "$1" ]
+then
+	echo "Expecting directory"
+	exit 1
+fi
+
+
+date=`date +%Y.%m.%d`
+
+for filename in $1/*;
+do
+	mv $filename $filename.$date
+done
+
+exit 0 

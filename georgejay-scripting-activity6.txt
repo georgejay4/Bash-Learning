@@ -1,0 +1,19 @@
+#! /bin/sh
+
+if [ $# -lt 2 ]
+  then
+    echo "2 Numbers Required"
+    exit 1
+fi
+
+difference=$(($2-$1))
+
+if [ "$1" -gt "$2" ]
+then	
+	echo "True"
+else
+	echo "False"
+	echo "The difference between the two numbers you entered is $difference "
+fi
+
+exit 0

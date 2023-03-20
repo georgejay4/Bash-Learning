@@ -1,0 +1,7 @@
+#1 /bin/sh
+
+read -p "Please enter a number: " number
+
+echo $number | rev
+
+exit 0

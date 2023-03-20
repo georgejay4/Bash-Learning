@@ -1,0 +1,14 @@
+#! /bin/sh
+
+echo "Please enter pasword: "
+read password
+
+if [ ${#password} -lt 8 ]
+then
+	echo "Password should be at least 8 characters long"
+fi
+
+if [[ $password =~ ^[[:alnum:]]+$ ]];then
+	echo "Letters and numbers" 
+
+#Unfortunately ran out of time on this exercise
